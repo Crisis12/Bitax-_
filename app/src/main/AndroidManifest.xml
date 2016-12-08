@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crisis.bitacora">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/calendar"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Asistencia" />
+        <activity android:name=".Vehiculos"></activity>
+    </application>
+
+</manifest>
+    <!---android:icon="@mipmap/ic_launcher"-->
