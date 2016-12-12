@@ -117,12 +117,37 @@
         android:background="#262626"
         android:elevation="2dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:id="@+id/frameLayout2">
         </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/error"
+            android:id="@+id/btncancelar"
+            android:layout_marginLeft="100dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/success"
+            android:id="@+id/aceptar" />
+    </FrameLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp">
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:text="Gasolinera"
@@ -196,27 +221,6 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="155dp"/>
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:layout_marginBottom="50dp"
-        android:layout_centerHorizontal="true">
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/error"
-            android:id="@+id/btncancelar"
-            android:layout_marginLeft="100dp"/>
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/success"
-            android:id="@+id/aceptar" />
     </FrameLayout>
 
 </RelativeLayout>
