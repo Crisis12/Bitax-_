@@ -4,11 +4,10 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -64,7 +63,7 @@ public class Asistencia extends AppCompatActivity implements AdapterView.OnItemS
 
         p1 = (Spinner) findViewById(R.id.spinnerUsuario);
 
-       RG = (RadioGroup) findViewById(R.id.RG);
+       //RG = (RadioGroup) findViewById(R.id.RG);
 
 
         dataAdapter = new ArrayAdapter<String>(this,
@@ -103,7 +102,7 @@ public class Asistencia extends AppCompatActivity implements AdapterView.OnItemS
 
     public void onRadioButtonClicked(View view) {
 
-        boolean checked = ((RadioButton) view).isChecked();
+       /* boolean checked = ((RadioButton) view).isChecked();
         switch(view.getId()) {
             case R.id.rbtnEntrada:
                 if (checked)
@@ -113,7 +112,7 @@ public class Asistencia extends AppCompatActivity implements AdapterView.OnItemS
                 if (checked)
                     opciones = 0;
                     break;
-        }
+        }*/
     }
 
     public void btnAceptar() {

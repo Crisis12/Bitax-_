@@ -7,28 +7,18 @@
     android:layout_height="match_parent"
     tools:context="com.example.crisis.bitacora.Asistencia">
 
-
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="#262626"
-        android:layout_alignParentTop="true"
+        android:layout_height="70dp"
+        android:background="#17be64"
         android:id="@+id/frameLayout">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/users"
-            android:layout_marginLeft="20dp"
-            android:layout_gravity="center_vertical"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="80dp"
-            android:fontFamily="sans-serif"
-            android:textSize="25dp"
-            android:text="Asistencia"
-            android:textColor="#f2f2f2"/>
+            android:src="@drawable/logoblanco"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            />
     </FrameLayout>
 
     <FrameLayout
@@ -42,7 +32,28 @@
             android:layout_height="wrap_content"
             android:id="@+id/lblUsuario"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:text="Motivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblMotivos"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:inputType="textLongMessage"
+            android:ems="10"
+            android:id="@+id/etxtMotivos"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/text_style"
+            />
 
         <Spinner
 
@@ -54,93 +65,51 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="30dp"
             android:id="@+id/spinnerUsuario"
-
-
-
-
-
+            android:backgroundTint="#1ad870"
             />
-
-        <TextView
-            android:text="Movimiento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblTipoMovimiento"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="75dp"/>
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="90dp"
-            android:id="@+id/RG"
-            >
-
-            <RadioButton
-                android:text="Entrada"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/rbtnEntrada"
-                android:layout_weight="1"
-                android:textColor="#828282"
-                android:onClick="onRadioButtonClicked"
-                />
-
-            <RadioButton
-                android:text="Salida"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/rbtnSalida"
-                android:layout_weight="1"
-                android:textColor="#828282"
-                android:layout_marginLeft="40dp"
-                android:onClick="onRadioButtonClicked"
-                />
-        </RadioGroup>
-
-        <TextView
-            android:text="Motivos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblMotivos"
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="140dp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:inputType="textLongMessage"
-            android:ems="10"
-            android:id="@+id/etxtMotivos"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="170dp"/>
 
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:layout_centerHorizontal="true">
+        android:layout_marginTop="430dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/error"
-            android:id="@+id/btncancelar"
-            android:layout_marginLeft="100dp"
-
-            />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             app:srcCompat="@drawable/success"
-            android:id="@+id/aceptar" />
+            android:id="@+id/aceptar"
+            android:layout_marginLeft="60dp"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/error"
+                android:id="@+id/btncancelar"
+                android:layout_marginLeft="150dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrada"
+            android:textSize="25dp"
+            android:layout_marginLeft="45dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salida"
+                android:textSize="25dp"
+                android:layout_marginLeft="145dp"/>
+        </GridLayout>
     </FrameLayout>
 
 </RelativeLayout>

@@ -1,10 +1,10 @@
 package com.example.crisis.bitacora;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
 public class Main extends AppCompatActivity {
 
@@ -18,7 +18,7 @@ public class Main extends AppCompatActivity {
 
     public void btnAsistencia() {
 
-        ImageView entry = (ImageView) findViewById(R.id.btnAsistencia);
+        Button entry = (Button) findViewById(R.id.btnAsistencia);
 
         entry.setOnClickListener(new View.OnClickListener() {
 
@@ -32,7 +32,7 @@ public class Main extends AppCompatActivity {
 
     public void btnVehiculos() {
 
-        ImageView entry = (ImageView) findViewById(R.id.btnVehiculo);
+        Button entry = (Button) findViewById(R.id.btnVehiculo);
 
         entry.setOnClickListener(new View.OnClickListener() {
 

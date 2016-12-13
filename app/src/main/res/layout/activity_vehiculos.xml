@@ -9,27 +9,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="#262626"
-        android:layout_alignParentTop="true"
+        android:layout_height="70dp"
+        android:background="#17be64"
         android:id="@+id/frameLayout">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/car"
-            android:layout_marginLeft="20dp"
-            android:layout_gravity="center_vertical"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="80dp"
-            android:fontFamily="sans-serif"
-            android:textSize="25dp"
-            android:text="Vehículos"
-            android:textColor="#f2f2f2"/>
+            android:src="@drawable/logoblanco"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            />
     </FrameLayout>
 
     <FrameLayout
@@ -53,7 +45,9 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="30dp"
-            android:id="@+id/spinnerVehiculo" />
+            android:id="@+id/spinnerVehiculo"
+            android:backgroundTint="#1ad870"
+            />
 
         <TextView
             android:text="Kilometraje"
@@ -71,15 +65,14 @@
             android:layout_marginTop="100dp">
 
             <RadioButton
-                android:text="km inicial"
+                android:text="KM inicial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/rbtnkmI"
-                android:layout_weight="1"
                 android:textColor="#828282"/>
 
             <RadioButton
-                android:text="km final"
+                android:text="KM final"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/rbtnkmF"
@@ -87,15 +80,6 @@
                 android:textColor="#828282"
                 android:layout_marginLeft="40dp"/>
         </RadioGroup>
-
-        <TextView
-            android:text="km"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblMotivos"
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="160dp"/>
 
         <EditText
             android:layout_width="wrap_content"
@@ -108,13 +92,22 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="150dp"/>
 
+        <TextView
+            android:text="KM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblMotivos"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp"/>
+
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginTop="300dp"
-        android:background="#262626"
+        android:background="#1ad870"
         android:elevation="2dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
