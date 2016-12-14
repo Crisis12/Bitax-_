@@ -85,7 +85,7 @@
             android:id="@+id/btnVehiculo"
             android:layout_gravity="center_horizontal"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/arro"
+            android:drawableLeft="@drawable/carrob"
             android:text="VEHICULOS"
             android:textSize="25dp"
             android:textColor="#FFFF"/>
